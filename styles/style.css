@@ -2,13 +2,16 @@
   box-sizing:border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 html {
   height:100vh;
 }
 
 body {
   height:100vh;
-  font-family: open sans;
+  font-family: 'Poppins', sans-serif;
+
   display:flex;
   justify-content:center;
   align-items:center;
