@@ -29,7 +29,7 @@ article {
   background: rgb(0,239,255);
   background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
   box-shadow:0 0 20px 20px rgba(0,0,0,.1);
-  border-radius:1rem;
+  /* border-radius:1rem; */
   position: relative;
   transition:.25s;
 }
@@ -44,8 +44,18 @@ header {
 }
 
 h1 {
-  margin:2rem 0 1rem;
+  margin:2rem 0 0rem;
   color: rgb(255, 255, 255);
+}
+
+header p{
+  transition: .7s;
+}
+
+header p:hover{
+  font-size:  18px;
+  transform:  .7s;
+  color: white;
 }
 
 button {
@@ -84,7 +94,7 @@ button svg:nth-of-type(2) {
 img {
   width:10em;
   border-radius:10em;
-  border:5px solid #fff;
+  /* border:5px solid #fff; */
   box-shadow:0 0 2px 2px rgba(0,0,0,.2);
   position:relative;
   top:2rem;
@@ -182,9 +192,29 @@ body.expand img {
 .mySlides {
   display: none;
   padding: 80px;
-  
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
   text-align: center;
 }
+
+.info img{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 9em;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -194,11 +224,19 @@ body.expand img {
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color: #888;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+
+.prev{
+  text-shadow: 1px 0px 8px black;
+}
+
+.next{
+  text-shadow: -1px 0px 8px black;
 }
 
 /* Position the "next button" to the right */
