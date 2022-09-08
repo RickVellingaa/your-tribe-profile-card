@@ -20,14 +20,14 @@ body {
 
 article {
   width:50vw;
-  max-width: 25em;
+  max-width: 28em;
   min-width:20em;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:flex-end;
   background: rgb(0,239,255);
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
+  background: #3B79D5;
   box-shadow:0 0 20px 20px rgba(0,0,0,.1);
   /* border-radius:1rem; */
   position: relative;
@@ -50,6 +50,7 @@ h1 {
 
 header p{
   transition: .7s;
+  color: #fff;
 }
 
 header p:hover{
@@ -95,7 +96,7 @@ img {
   width:10em;
   border-radius:10em;
   /* border:5px solid #fff; */
-  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
+  box-shadow:0 0 10px 4px rgba(255, 255, 255, 0.4);
   position:relative;
   top:2rem;
   transition:.25s .15s;
@@ -120,7 +121,6 @@ dl {
 }
 
 dt{
-  font-weight: bold;
   border-top: 1px solid rgba(0,0,0,0.3);
   padding-top: .25rem;
   margin-top: .25rem;
@@ -131,6 +131,7 @@ dt:nth-of-type(3){ grid-area: js-dt; }
 
 dd {
   margin:0;
+  font-weight: bold;
   padding-left:.3rem;
   transition:.25s .3s;
 }
@@ -184,7 +185,8 @@ body.expand img {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  background: rgb(0,239,255);
+  background: #3B79D5;
   width: 100%;
 }
 
@@ -208,6 +210,11 @@ body.expand img {
   box-shadow: none;
 }
 
+.tekst{
+  text-align: center;
+  margin-left: 20px;
+}
+
 .info{
   display: flex;
   flex-direction: row;
@@ -224,7 +231,7 @@ body.expand img {
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -232,11 +239,11 @@ body.expand img {
 }
 
 .prev{
-  text-shadow: 1px 0px 8px black;
+  text-shadow: 1px 0px 8px rgb(255, 255, 255);
 }
 
 .next{
-  text-shadow: -1px 0px 8px black;
+  text-shadow: -1px 0px 8px rgb(255, 255, 255);
 }
 
 /* Position the "next button" to the right */
@@ -250,6 +257,12 @@ body.expand img {
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   color: white;
+}
+
+.txtslide{
+  color: white;
+  margin-top: 10px;
+  font-size: .8em;
 }
 
 /* The dot/bullet/indicator container */
@@ -280,4 +293,7 @@ body.expand img {
 q {font-style: italic;}
 
 /* Add a blue color to the author */
-.author {color: cornflowerblue;}
+.author {color: white;
+  font-size: 1.1em;
+  font-weight: 900  ;
+}
