@@ -1,4 +1,5 @@
 ## Uitleg opdracht
+URL: https://rickvellingaa.github.io/your-tribe-profile-card/
 
 De opdracht was om te beginnen met de Leertaak Visitekaartje. Het doel van de leertaak is om een visitekaartje te maken over jezelf waarin je jezelf voorstelt, je schrijft hierin bijvoorbeeld je skills, hobbies, interesses. 
 
