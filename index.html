@@ -1,88 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FDND Visitekaartje</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
 
-<article>
-  <header>
-    <h1>Rick Vellinga</h1>
-    <p><em>Frontend Developer</em></p>
-  </header>
-  
-  <img src="assets/ik.jpg" alt="Creative Coder">
+  <article>
+    <header>
+      <h1>Rick Vellinga</h1>
+      <p><em>Frontend Developer</em></p>
+    </header>
 
-  <dl>
-    <dt>19 jaar</dt><dd>Leeftijd</dd>
-    <dt>IJmuiden</dt><dd>Woonplaats</dd>
-    <dt>CSS, HTML, JS</dt><dd>Skills</dd>
-  </dl>
-  
+    <img src="assets/ik.jpg" alt="Creative Coder">
 
-  
-  <div class="slideshow-container">
+    <dl>
+      <dt>19 jaar</dt>
+      <dd>Leeftijd</dd>
+      <dt>IJmuiden</dt>
+      <dd>Woonplaats</dd>
+      <dt>CSS, HTML, JS</dt>
+      <dd>Skills</dd>
+    </dl>
 
-    <div class="mySlides">
-      <div class="info">
-        <img src="./assets/jobs-frontend-dev-2.jpg" alt="" class="infoimg">
-        <div class="tekst">
-          <p class="author">Skills</p>
-          <p class="txtslide">Ik hou mij vooral bezig met HTML, CSS en JS.</p>
+    <div class="slideshow-container">
+
+      <div class="mySlides">
+        <div class="info">
+          <img src="./assets/jobs-frontend-dev-2.jpg" alt="" class="infoimg">
+          <div class="tekst">
+            <p class="author">Skills</p>
+            <p class="txtslide">Ik hou mij vooral bezig met HTML, CSS en JS.</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="mySlides">
-      <div class="info">
-        <img src="./assets/gamen.jpg" alt="" class="infoimg">
-        <div class="tekst">
-          <p class="author">Hobbies</p>
-          <p class="txtslide">Mijn hobbies zijn vooral Basketbal en uitgaan & gamen met vrienden,</p>
+      <div class="mySlides">
+        <div class="info">
+          <img src="./assets/gamen.jpg" alt="" class="infoimg">
+          <div class="tekst">
+            <p class="author">Hobbies</p>
+            <p class="txtslide">Mijn hobbies zijn vooral Basketbal en uitgaan & gamen met vrienden,</p>
+          </div>
         </div>
       </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
     </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    
-    
-    
-    <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-</article>
+  </article>
 
   <script src="./scripts/script.js"></script>
 </body>
+
 </html>
